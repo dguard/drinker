@@ -1,0 +1,450 @@
+/* line 3, index.sass */
+body {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 50px;
+}
+
+/* line 8, index.sass */
+body.angry {
+  color: #30b6fb;
+  background-color: #c6ebfe;
+}
+/* line 12, index.sass */
+body.angry .dark-text {
+  color: #1070a3;
+}
+/* line 15, index.sass */
+body.angry .left-bg {
+  background: transparent url("images/angry-left-bg.png") no-repeat top left;
+  min-height: 500px;
+}
+/* line 19, index.sass */
+body.angry .right-bg {
+  background: transparent url("images/angry-right-bg.png") no-repeat top right;
+  min-height: 500px;
+}
+/* line 23, index.sass */
+body.angry .card {
+  background-color: white;
+  background-image: url("images/angry-pack.png");
+}
+/* line 27, index.sass */
+body.angry .user-text {
+  color: #d7002e;
+}
+/* line 30, index.sass */
+body.angry .comp-text {
+  color: #00af00;
+}
+
+/* line 33, index.sass */
+body.army {
+  color: #bf9f62;
+  background-color: #ebfec6;
+}
+/* line 37, index.sass */
+body.army .left-bg {
+  background: transparent url("images/army-left-bg.png") no-repeat top left;
+  min-height: 500px;
+}
+/* line 41, index.sass */
+body.army .right-bg {
+  background: transparent url("images/army-right-bg.png") no-repeat top right;
+  min-height: 500px;
+}
+/* line 45, index.sass */
+body.army .dark-text {
+  color: #81c203;
+}
+/* line 48, index.sass */
+body.army .card {
+  background-image: url("images/army-pack.png");
+}
+/* line 51, index.sass */
+body.army .user-text {
+  color: #0093dd;
+}
+/* line 54, index.sass */
+body.army .comp-text {
+  color: #039a35;
+}
+
+/* line 57, index.sass */
+#main-container {
+  margin-bottom: 10px;
+}
+
+/* line 60, index.sass */
+#game-app {
+  text-align: center;
+  width: 780px;
+  margin: 0 auto;
+}
+/* line 65, index.sass */
+#game-app .card-empty {
+  z-index: 10;
+  background: #fbfbfb;
+  border: 1px solid #fbfbfb;
+}
+/* line 70, index.sass */
+#game-app .card-shirt {
+  background-position: -1326px 0px;
+  background-color: transparent;
+  z-index: 20;
+}
+
+/* line 75, index.sass */
+#user-container {
+  margin-top: 50px;
+}
+
+/* line 78, index.sass */
+#comp-container {
+  margin-top: 50px;
+}
+
+/* line 81, index.sass */
+.card-field {
+  position: relative;
+  width: 100px;
+  height: 144px;
+  margin: 0 auto;
+}
+/* line 87, index.sass */
+.card-field .card.active {
+  top: 0;
+  left: 0;
+}
+
+/* line 91, index.sass */
+.card {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 144px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: 1px solid #666666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 102, index.sass */
+.card-diamond-1 {
+  background-position: 0px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-2 {
+  background-position: -102px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-3 {
+  background-position: -204px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-4 {
+  background-position: -306px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-5 {
+  background-position: -408px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-6 {
+  background-position: -510px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-7 {
+  background-position: -612px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-8 {
+  background-position: -714px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-9 {
+  background-position: -816px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-10 {
+  background-position: -918px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-11 {
+  background-position: -1020px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-12 {
+  background-position: -1122px 0px;
+}
+
+/* line 102, index.sass */
+.card-diamond-13 {
+  background-position: -1224px 0px;
+}
+
+/* line 106, index.sass */
+.card-spade-1 {
+  background-position: 0px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-2 {
+  background-position: -102px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-3 {
+  background-position: -204px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-4 {
+  background-position: -306px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-5 {
+  background-position: -408px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-6 {
+  background-position: -510px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-7 {
+  background-position: -612px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-8 {
+  background-position: -714px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-9 {
+  background-position: -816px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-10 {
+  background-position: -918px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-11 {
+  background-position: -1020px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-12 {
+  background-position: -1122px -146px;
+}
+
+/* line 106, index.sass */
+.card-spade-13 {
+  background-position: -1224px -146px;
+}
+
+/* line 110, index.sass */
+.card-heart-1 {
+  background-position: 0px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-2 {
+  background-position: -102px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-3 {
+  background-position: -204px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-4 {
+  background-position: -306px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-5 {
+  background-position: -408px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-6 {
+  background-position: -510px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-7 {
+  background-position: -612px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-8 {
+  background-position: -714px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-9 {
+  background-position: -816px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-10 {
+  background-position: -918px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-11 {
+  background-position: -1020px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-12 {
+  background-position: -1122px -292px;
+}
+
+/* line 110, index.sass */
+.card-heart-13 {
+  background-position: -1224px -292px;
+}
+
+/* line 114, index.sass */
+.card-club-1 {
+  background-position: 0px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-2 {
+  background-position: -102px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-3 {
+  background-position: -204px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-4 {
+  background-position: -306px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-5 {
+  background-position: -408px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-6 {
+  background-position: -510px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-7 {
+  background-position: -612px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-8 {
+  background-position: -714px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-9 {
+  background-position: -816px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-10 {
+  background-position: -918px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-11 {
+  background-position: -1020px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-12 {
+  background-position: -1122px -438px;
+}
+
+/* line 114, index.sass */
+.card-club-13 {
+  background-position: -1224px -438px;
+}
+
+/* line 118, index.sass */
+#turn-btn i {
+  display: none;
+}
+
+/* line 121, index.sass */
+#turn-btn.passive {
+  background: gray;
+}
+/* line 123, index.sass */
+#turn-btn.passive i {
+  display: inline-block;
+}
+
+/* line 126, index.sass */
+.block-light {
+  background: #fbfbfb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* line 133, index.sass */
+.btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 140, index.sass */
+.console {
+  color: #666666;
+}
+
+/* line 143, index.sass */
+#dialog-modal {
+  color: black;
+}
+/* line 146, index.sass */
+#dialog-modal .modal-body {
+  font-size: 16px;
+}
+
+/* line 149, index.sass */
+#tools {
+  padding-top: 20px;
+}
+
+/* line 152, index.sass */
+.dropdown-menu li {
+  text-align: left;
+}

@@ -1,0 +1,153 @@
+@import 'compass/css3'
+
+body
+  font-size: 13px
+  font-family: 'Open Sans', sans-serif
+  padding-top: 50px
+
+body.angry
+  color: darken(#C6EBFE, 30%)
+  background-color: #C6EBFE
+
+  .dark-text
+    color: #1070A3
+
+  .left-bg
+    background: transparent url('images/angry-left-bg.png') no-repeat top left
+    min-height: 500px
+
+  .right-bg
+    background: transparent url('images/angry-right-bg.png') no-repeat top right
+    min-height: 500px
+
+  .card
+    background-color: white
+    background-image: url("images/angry-pack.png")
+
+  .user-text
+    color: #D7002E
+
+  .comp-text
+    color: #00aF00
+
+body.army
+  color: #BF9F62
+  background-color: #EBFEC6
+
+  .left-bg
+    background: transparent url('images/army-left-bg.png') no-repeat top left
+    min-height: 500px
+
+  .right-bg
+    background: transparent url('images/army-right-bg.png') no-repeat top right
+    min-height: 500px
+
+  .dark-text
+    color: darken(#EBFEC6, 50%)
+
+  .card
+    background-image: url("images/army-pack.png")
+
+  .user-text
+    color: #0093DD
+
+  .comp-text
+    color: #039A35
+
+#main-container
+  margin-bottom: 10px
+
+#game-app
+  text-align: center
+  width: 780px
+  margin: 0 auto
+
+  .card-empty
+    z-index: 10
+    background: #fbfbfb
+    border: 1px solid #fbfbfb
+
+  .card-shirt
+    background-position: -1326px 0px
+    background-color: transparent
+    z-index: 20
+
+#user-container
+  margin-top: 50px
+
+#comp-container
+  margin-top: 50px
+
+.card-field
+  position: relative
+  width: 100px
+  height: 144px
+  margin: 0 auto
+
+  .card.active
+    top: 0
+    left: 0
+
+.card
+  position: absolute
+  display: block
+  width: 100px
+  height: 144px
+  background-repeat: no-repeat
+  margin: 0 auto
+  border: 1px solid #666
+  @include border-radius(5px)
+
+@for $i from 1 through 13
+  .card-diamond-#{$i} // бубны
+    background-position: -($i - 1)*102px 0px
+
+@for $i from 1 through 13
+  .card-spade-#{$i}   // пики
+    background-position: -($i - 1)*102px -146px
+
+@for $i from 1 through 13
+  .card-heart-#{$i}   // черви
+    background-position: -($i - 1)*102px -292px
+
+@for $i from 1 through 13
+  .card-club-#{$i}    // трефы
+    background-position: -($i - 1)*102px -438px
+
+#turn-btn
+  i
+    display: none
+
+#turn-btn.passive
+  background: gray
+  i
+    display: inline-block
+
+.block-light
+  background: #fbfbfb
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  padding: 15px
+
+.btn
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+
+.console
+  color: #666
+
+#dialog-modal
+  color: #000000
+
+  .modal-body
+    font-size: 16px
+
+#tools
+  padding-top: 20px
+
+.dropdown-menu li
+  text-align: left

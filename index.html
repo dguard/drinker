@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Игра "Пьяница"</title>
+	<meta name="author" content="Александр Сердитов, РГППУ"/>
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="angry">
+	<div class="left-bg">
+		<div class="right-bg">
+
+			<div id="game-app">
+				<div class="block-light">
+					<h3 class="dark-text">Карточная игра "Пьяница"</h3>
+					<div id="main-container" class="row-fluid">
+
+						<div id="user-container" class="user-text span4">
+							<h4>Вы</h4>
+							<div class="card-field block">
+								<div class="card active card-shirt"></div>
+								<div class="card passive card-shirt"></div>
+							</div>
+							<h6>Количество карт: <span class="count">0</span></h6>
+						</div>
+
+						<div id="game-container" class="span4">
+							<h4>Ход игры</h4>
+							<div class="user-field card-field pull-left">
+								<div class="card active card-empty"></div>
+							</div>
+							<div class="comp-field card-field pull-right">
+								<div class="card active card-empty"></div>
+							</div>
+							<div class="clearfix"></div>
+							<h6 class="console"></h6>
+						</div>
+
+						<div id="comp-container" class="comp-text span4">
+							<h4>Соперник</h4>
+							<div class="card-field">
+								<div class="card active card-shirt"></div>
+								<div class="card passive card-shirt"></div>
+							</div>
+							<h6>Количество карт: <span class="count">0</span></h6>
+						</div>
+
+					</div>
+
+					<div class="row-fluid">
+						<div class="offset4 span4">
+							<a id="turn-btn" class="btn btn-danger">
+								<i class="icon-spinner icon-spin icon-large"></i> Сделать ход
+							</a>
+							<a id="reset-btn" class="btn btn-success hide">Новая игра</a>
+						</div>
+					</div>
+
+					<div id="tools" class="row-fluid">
+						<div class="span4">
+							<h5>Скорость анимации</h5>
+							<div class="btn-group">
+								<a id="decrease-btn" class="btn"><i class="icon-arrow-down"></i></a>
+								<a id="speed-text" class="btn">100%</a>
+								<a id="increase-btn" class="btn"><i class="icon-arrow-up"></i></a>
+							</div>
+						</div>
+						<div class="span4">
+							<h5>Ход</h5>
+							<div class="turn-count"></div>
+						</div>
+						<div class="span4">
+							<h5>Дополнительно</h5>
+							<div class="btn-group">
+								<a class="btn btn-info" href="#"><i class="icon-cog"></i> Действия</a>
+								<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+									<span class="icon-caret-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#" id="change-shirt-btn">Сменить рубашку</a></li>
+									<li><a href="#" id="shuffle-btn">Перетасовать колоду</a></li>
+									<li><a href="#" id="about-btn">Об авторе</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="dialog-modal" class="modal hide fade" tabindex="1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="modal-title"></h3>
+		</div>
+		<div class="modal-body"></div>
+		<div class="modal-footer">
+			<button class="btn btn-info" data-dismiss="modal" aria-hidden="true">ОК</button>
+		</div>
+	</div>
+	<div id="about" class="hide">
+		Меня зовут Александр Сердитов. <br><br>Учусь по специальности "Компьютерные технологии" на <a href="http://www.rsvpu.ru/departments/elin/fakultet-informatiki/" target="_blank">факультете информатики</a> Российского государственного профессионально-педагогического университета на 4 курсе. <br><br> Занимаюсь разработкой веб-приложений более двух лет как frontend- и backend-разработчик. Основная специализация - комплексные решения с использованием <a href="http://www.yiiframework.com/" target="_blank">Yii Framework</a> и JS (jQuery, Backbone, jQueryUI). <br><br> В своих проектах активно использую Ajax, Sass (Compass), CoffeeScript, Twitter Bootstrap. <br><br> Являюсь исполнителем проекта гранта Министерства Образования и Науки РФ - "Информационно образовательная среда РГППУ". Создаю модули для студентов и преподавателей. Функции модулей различные: от загрузки учебных материалов, нормативных актов до контроля успеваемости студентов и проверки обеспеченности учебных подразделений (институтов и кафедр) необходимыми документами и отчетами. <br><br> Также работаю на бирже <a href="https://www.odesk.com/o/profiles/users/_~012d1f57824a486156/#" target="_blank">odesk.com</a> как jQuery и php-разработчик. Участвовал в <a href="http://www.indiegogo.com/projects/qrccino" target="_blank">нескольких</a> стартапах. <br><br> В данный момент создаю API для интеграции данных с Google Analytics, Facebook, Twitter, Google Search и других сервисов в одном проекте. <br><br> Увлекаюсь <a href="http://vk.com/video55416610_163524520" target="_blank">музыкой</a> - закончил музыкальную школу по классу фортепиано. Слушаю рок, электронную и классическую музыку.
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.animation.easing.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+	<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
